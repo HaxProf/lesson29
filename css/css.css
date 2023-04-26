@@ -1,0 +1,32 @@
+@import url(null.css);
+
+body {
+  background-color: burlywood;
+  color: red;
+  font-family: sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+  padding: 50px;
+}
+.grid {
+  margin-bottom: 200px;
+  padding-bottom: 200px;
+  border-bottom: 10px solid #363636;
+  min-height: 100vh;
+}
+.container {
+  margin: 0 auto;
+  min-width: 1000px;
+}
+
+.item {
+  border: 5px dashed #444;
+  font-size: 40px;
+  padding: 0.8em;
+  text-align: center;
+}
+.grid-1 {
+  display: grid;
+  grid-template: repeat(2, auto) / 1fr 1fr minmax(100px, 200px) 1fr 1fr;
+}
